@@ -5,7 +5,7 @@ body {
   display: flex;
   font-family: "Merriweather", serif;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: left;
   height: 100vh;
   margin: 0;
 }
@@ -97,10 +97,24 @@ body {
 .About-text{
   position: absolute;
   justify-content: flex-end;
+  right: 40%;
+  bottom: 65%;
 }
 
 .paragraph{
   position: absolute;
   justify-content: flex-end;
-  border-style: solid;
+  right: 5%;
+  bottom: 50%;
+  line-height: 1.5em;
 }
+
+footer {
+  position: absolute; /* or fixed, depending on your layout */
+  bottom: 0; /* Position the footer at the bottom of the page */
+  width: 100%; /* Make the footer span the entire width of the page */
+  background-color: #f8f8f8; /* Set the background color of the footer */
+  padding: 10px; /* Add some padding to the footer */
+  text-align: center; /* Align the content of the footer to the center */
+} 
+
