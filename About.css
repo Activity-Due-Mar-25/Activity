@@ -1,20 +1,77 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Sumana:wght@700&display=swap");
-body {
-  align-items: left;
-  background-color: #f2f2f2;
-  display: flex;
-  font-family: "Merriweather", serif;
-  flex-wrap: wrap;
-  justify-content: left;
-  height: 100vh;
+*{
   margin: 0;
+  padding: 0;
+  font-family: "Merriweather", serif;
 }
-.person {
+
+.Container{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    background-image: linear-gradient(to right, rgb(240, 222, 173) , rgb(175, 245, 218));
+    
+}
+
+.logo{
+  width: 13%;
+  filter: brightness(0);
+}
+
+nav{
+  display: flex;
+  width: 90%;
+  margin: auto;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav ul li{
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+  border-style: groove;
+  border-width: 2px;
+  border-color: rgb(156, 184, 184);
+  transition: 0.5s;
+}
+
+nav ul li:hover{
+  background-color: rgb(107, 177, 154);
+  transform: scale(1.2);
+}
+
+nav ul li a:hover{
+  color: antiquewhite;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: #000000;
+  font-size: 100%;
+  font-family: Tahoma;
+}
+
+.person1 {
   align-items: center;
   display: flex;
+  position: absolute;
   flex-direction: column;
-  width: 280px;
+  width: 350px;
 }
+
+.person2 {
+  align-items: center;
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  width: 350px;
+  left: 300px;
+}
+
 .container {
   border-radius: 50%;
   height: 312px;
@@ -64,7 +121,7 @@ body {
   transform: translateY(0) scale(1.2);
 }
 .img1 {
-  left: px;
+  left:  px;
   top: 164px;
   width: 340px;
 }
@@ -104,16 +161,16 @@ body {
 .paragraph{
   position: absolute;
   justify-content: flex-end;
-  right: 5%;
+  right: 6%;
   bottom: 50%;
   line-height: 1.5em;
 }
+
 .wrap {
-  height: 100%;
   position: absolute;
   justify-content: flex-end;
   left: 50%;
-  bottom: -50%;
+  top: 350px;
 }
 
 .button {
@@ -139,12 +196,4 @@ body {
   box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
   color: #fff;
   transform: translateY(-7px);
-}
-footer {
-  position: absolute; 
-  bottom: 0;
-  width: 100%; 
-  background-color: #f8f8f8; 
-  padding: 10px; 
-  text-align: center;
 }
