@@ -22,7 +22,7 @@
 }
 
 .foot{
-  position: fixed;
+  position: absolute;
   bottom: 0px;
   border-style: solid;
   border-width: 0px;
@@ -201,7 +201,7 @@ nav ul li a{
   position: absolute;
   justify-content: flex-end;
   left: 53%;
-  top: 540px;
+  top: 510px;
 }
 
 .button {
